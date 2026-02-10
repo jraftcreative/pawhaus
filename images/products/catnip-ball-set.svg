@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" rx="24" fill="#EDE9FE"/>
+  <!-- Ball 1 -->
+  <circle cx="140" cy="210" r="45" fill="#8B5CF6"/>
+  <circle cx="140" cy="210" r="38" fill="none" stroke="#A78BFA" stroke-width="2"/>
+  <path d="M120 195 Q140 210 160 195" stroke="#C4B5FD" stroke-width="2.5" fill="none"/>
+  <circle cx="130" cy="200" r="4" fill="#C4B5FD" opacity="0.6"/>
+  <!-- Ball 2 -->
+  <circle cx="260" cy="210" r="45" fill="#7C3AED"/>
+  <circle cx="260" cy="210" r="38" fill="none" stroke="#A78BFA" stroke-width="2"/>
+  <path d="M240 195 Q260 210 280 195" stroke="#C4B5FD" stroke-width="2.5" fill="none"/>
+  <circle cx="250" cy="200" r="4" fill="#C4B5FD" opacity="0.6"/>
+  <!-- Ball 3 -->
+  <circle cx="200" cy="145" r="40" fill="#A78BFA"/>
+  <circle cx="200" cy="145" r="33" fill="none" stroke="#C4B5FD" stroke-width="2"/>
+  <path d="M182 132 Q200 145 218 132" stroke="#EDE9FE" stroke-width="2.5" fill="none"/>
+  <circle cx="192" cy="135" r="4" fill="#EDE9FE" opacity="0.6"/>
+  <!-- Leaf accent -->
+  <path d="M195 100 Q200 85 210 90 Q205 100 200 105 Z" fill="#6D28D9" opacity="0.5"/>
+  <text x="200" y="350" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#6D28D9">Catnip Ball Set</text>
+</svg>

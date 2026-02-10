@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" rx="24" fill="#FEF3C7"/>
+  <!-- Leash reel body -->
+  <path d="M160 140 Q140 140 135 160 L130 260 Q130 290 165 290 L235 290 Q270 290 270 260 L265 160 Q260 140 240 140 Z" fill="#F59E0B"/>
+  <!-- Inner circle/reel -->
+  <circle cx="200" cy="210" r="40" fill="#FBBF24"/>
+  <circle cx="200" cy="210" r="30" fill="#D97706" opacity="0.4"/>
+  <circle cx="200" cy="210" r="8" fill="#D97706"/>
+  <!-- Button -->
+  <rect x="185" y="260" width="30" height="16" rx="6" fill="#D97706"/>
+  <!-- Leash line extending out -->
+  <path d="M200 170 Q200 130 220 100 Q230 85 240 80" stroke="#D97706" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Clip at end -->
+  <rect x="236" y="72" width="14" height="18" rx="3" fill="#B45309"/>
+  <circle cx="243" cy="70" r="5" fill="none" stroke="#B45309" stroke-width="2"/>
+  <!-- Grip texture -->
+  <line x1="150" y1="155" x2="250" y2="155" stroke="#D97706" stroke-width="1.5" opacity="0.4"/>
+  <text x="200" y="350" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#B45309">Retractable Leash</text>
+</svg>

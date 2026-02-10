@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" rx="24" fill="#FEF3C7"/>
+  <!-- Harness body - chest piece -->
+  <path d="M150 160 Q130 160 125 180 L120 220 Q118 240 140 250 L180 265 Q200 270 220 265 L260 250 Q282 240 280 220 L275 180 Q270 160 250 160 Z" fill="#F59E0B"/>
+  <!-- Inner padding -->
+  <path d="M158 170 Q142 170 138 186 L134 218 Q132 234 150 242 L184 255 Q200 260 216 255 L250 242 Q268 234 266 218 L262 186 Q258 170 242 170 Z" fill="#FBBF24"/>
+  <!-- Straps -->
+  <path d="M140 250 L125 290" stroke="#D97706" stroke-width="8" stroke-linecap="round"/>
+  <path d="M260 250 L275 290" stroke="#D97706" stroke-width="8" stroke-linecap="round"/>
+  <path d="M200 160 L200 130" stroke="#D97706" stroke-width="8" stroke-linecap="round"/>
+  <!-- Buckles -->
+  <rect x="118" y="286" width="18" height="12" rx="3" fill="#B45309"/>
+  <rect x="268" y="286" width="18" height="12" rx="3" fill="#B45309"/>
+  <!-- D-ring at top -->
+  <circle cx="200" cy="124" r="10" fill="none" stroke="#B45309" stroke-width="3"/>
+  <!-- Front clip -->
+  <rect x="192" y="200" width="16" height="20" rx="4" fill="#D97706"/>
+  <text x="200" y="350" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#B45309">No-Pull Harness</text>
+</svg>

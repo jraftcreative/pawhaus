@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" rx="24" fill="#FEF3C7"/>
+  <!-- Glove palm -->
+  <path d="M160 290 Q140 290 135 250 L130 180 Q128 160 145 158 Q162 156 164 175 L166 190
+           L168 140 Q166 120 183 118 Q200 116 202 136 L204 190
+           L206 130 Q204 110 221 108 Q238 106 240 126 L240 185
+           L242 145 Q240 125 257 123 Q274 121 275 141 L274 210
+           Q280 200 290 198 Q305 196 305 212 Q305 225 285 240
+           L270 260 Q265 290 240 290 Z" fill="#F59E0B"/>
+  <!-- Texture nubs -->
+  <circle cx="180" cy="220" r="5" fill="#D97706" opacity="0.5"/>
+  <circle cx="200" cy="215" r="5" fill="#D97706" opacity="0.5"/>
+  <circle cx="220" cy="220" r="5" fill="#D97706" opacity="0.5"/>
+  <circle cx="190" cy="245" r="5" fill="#D97706" opacity="0.5"/>
+  <circle cx="210" cy="240" r="5" fill="#D97706" opacity="0.5"/>
+  <circle cx="200" cy="265" r="5" fill="#D97706" opacity="0.5"/>
+  <!-- Wrist cuff -->
+  <rect x="140" y="285" width="105" height="20" rx="8" fill="#D97706"/>
+  <text x="200" y="350" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#B45309">Grooming Glove</text>
+</svg>

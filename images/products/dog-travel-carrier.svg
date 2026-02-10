@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" rx="24" fill="#FEF3C7"/>
+  <!-- Carrier body -->
+  <rect x="100" y="140" width="200" height="145" rx="20" fill="#F59E0B"/>
+  <!-- Top flap / opening -->
+  <path d="M110 155 Q110 140 130 135 L270 135 Q290 140 290 155" fill="#D97706"/>
+  <!-- Handle -->
+  <path d="M165 135 Q165 105 200 105 Q235 105 235 135" stroke="#B45309" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- Mesh window -->
+  <rect x="145" y="175" width="110" height="70" rx="12" fill="#FBBF24"/>
+  <line x1="170" y1="175" x2="170" y2="245" stroke="#D97706" stroke-width="1.5" opacity="0.5"/>
+  <line x1="195" y1="175" x2="195" y2="245" stroke="#D97706" stroke-width="1.5" opacity="0.5"/>
+  <line x1="220" y1="175" x2="220" y2="245" stroke="#D97706" stroke-width="1.5" opacity="0.5"/>
+  <line x1="145" y1="195" x2="255" y2="195" stroke="#D97706" stroke-width="1.5" opacity="0.5"/>
+  <line x1="145" y1="215" x2="255" y2="215" stroke="#D97706" stroke-width="1.5" opacity="0.5"/>
+  <line x1="145" y1="235" x2="255" y2="235" stroke="#D97706" stroke-width="1.5" opacity="0.5"/>
+  <!-- Zipper detail -->
+  <path d="M140 175 Q138 210 140 245" stroke="#B45309" stroke-width="2.5" fill="none" stroke-dasharray="4,3"/>
+  <path d="M260 175 Q262 210 260 245" stroke="#B45309" stroke-width="2.5" fill="none" stroke-dasharray="4,3"/>
+  <!-- Shoulder strap attachment -->
+  <circle cx="110" cy="180" r="6" fill="#B45309"/>
+  <circle cx="290" cy="180" r="6" fill="#B45309"/>
+  <text x="200" y="350" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#B45309">Travel Carrier</text>
+</svg>
