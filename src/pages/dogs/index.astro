@@ -16,12 +16,14 @@ const dogProducts = allProducts.filter((p) => p.data.category === 'dogs');
 
   <section class="container-max pb-16">
     <!-- Header -->
-    <div class="bg-dog-amber-light rounded-2xl p-8 md:p-12 mb-8 text-center">
-      <span class="text-5xl mb-4 block">🐶</span>
-      <h1 class="font-display text-3xl md:text-4xl font-bold text-charcoal">Dog Accessories</h1>
-      <p class="text-charcoal-light mt-2 max-w-lg mx-auto">
-        From outdoor adventures to mealtime fun — everything your good boy or girl deserves.
-      </p>
+    <div class="relative rounded-2xl overflow-hidden mb-8">
+      <img src="/images/category-dogs.jpg" alt="Dog accessories" class="w-full h-48 md:h-64 object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-dog-amber/80 to-dog-amber/20 flex flex-col items-center justify-end p-8 text-center">
+        <h1 class="font-display text-3xl md:text-4xl font-bold text-white">Dog Accessories</h1>
+        <p class="text-white/90 mt-2 max-w-lg mx-auto">
+          From outdoor adventures to mealtime fun — everything your good boy or girl deserves.
+        </p>
+      </div>
     </div>
 
     <!-- Products -->

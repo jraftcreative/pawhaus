@@ -18,6 +18,7 @@ const products = defineCollection({
     inStock: z.boolean().default(true),
     featured: z.boolean().default(false),
     weight: z.string(),
+    gallery: z.array(z.string()).optional(),
   }),
 });
 

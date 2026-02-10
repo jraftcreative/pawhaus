@@ -45,19 +45,23 @@
 
       <!-- Hero visual -->
       <div class="hidden md:flex items-center justify-center">
-        <div class="relative w-80 h-80">
-          <div class="absolute inset-0 bg-coral/10 rounded-full"></div>
-          <div class="absolute inset-4 bg-coral/5 rounded-full flex items-center justify-center">
-            <span class="text-9xl">🐾</span>
+        <div class="relative w-96 h-96">
+          <!-- Cat image -->
+          <div class="absolute top-0 left-0 w-64 h-64 rounded-2xl overflow-hidden shadow-lg rotate-[-3deg] z-10">
+            <img src="/images/hero-cat.jpg" alt="Happy cat" class="w-full h-full object-cover" />
+          </div>
+          <!-- Dog image -->
+          <div class="absolute bottom-0 right-0 w-64 h-64 rounded-2xl overflow-hidden shadow-lg rotate-[3deg]">
+            <img src="/images/hero-dog.jpg" alt="Happy dog" class="w-full h-full object-cover" />
           </div>
           <!-- Floating badges -->
-          <div class="absolute top-4 right-4 bg-white rounded-xl shadow-md px-3 py-2 animate-bounce">
+          <div class="absolute top-2 right-2 bg-white rounded-xl shadow-md px-3 py-2 animate-bounce z-20">
             <span class="text-sm font-semibold">🐱 Cats</span>
           </div>
-          <div class="absolute bottom-8 left-0 bg-white rounded-xl shadow-md px-3 py-2 animate-bounce" style="animation-delay: 0.5s">
+          <div class="absolute bottom-2 left-2 bg-white rounded-xl shadow-md px-3 py-2 animate-bounce z-20" style="animation-delay: 0.5s">
             <span class="text-sm font-semibold">🐶 Dogs</span>
           </div>
-          <div class="absolute bottom-0 right-8 bg-coral text-white rounded-xl shadow-md px-3 py-2">
+          <div class="absolute bottom-16 right-0 bg-coral text-white rounded-xl shadow-md px-3 py-2 z-20">
             <span class="text-sm font-bold">Free Shipping</span>
           </div>
         </div>

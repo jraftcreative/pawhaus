@@ -1,22 +1,25 @@
 {
-  "name": "Slow Feeder Dog Bowl",
+  "name": "Pokopo EZ Automatic Pet Feeder",
   "slug": "slow-feeder-dog-bowl",
-  "price": 18,
-  "comparePrice": 25,
+  "price": 68,
+  "comparePrice": 89,
   "category": "dogs",
-  "image": "/images/products/slow-feeder-dog-bowl.svg",
-  "imageAlt": "Non-slip slow feeder dog bowl with maze pattern to prevent fast eating",
-  "shortDescription": "Slow down your speed-eater and make mealtime a healthy, enriching puzzle.",
-  "description": "Does your dog inhale their food in 30 seconds flat? This maze-patterned slow feeder bowl turns meals into a fun challenge, extending eating time by up to 10x. Slower eating means better digestion, less bloating, and a mentally stimulated pup. The non-slip base stays put even with the most enthusiastic eaters.",
+  "image": "/images/products/pokopo-ez-feeder.jpg",
+  "imageAlt": "Pokopo EZ automatic pet feeder with stainless steel bowl, 3.5L tank, and digital display",
+  "shortDescription": "Automatically feed your pet on schedule — up to 6 meals a day with voice recording.",
+  "description": "Never worry about your pet's mealtime again. The Pokopo EZ automatic pet feeder dispenses dry food on a precise schedule you set — up to 6 meals per day with portion control from 5g to 200g per meal. Record a 10-second voice message so your fur baby hears your voice at every feeding, even when you're away. Dual power supply (USB + D batteries) means it keeps working even during power outages. Perfect for busy pet parents in Singapore.",
   "features": [
-    "Maze pattern extends mealtime by up to 10x for healthier digestion",
-    "Non-slip rubber base prevents sliding on tiles and hard floors",
-    "BPA-free, food-grade plastic safe for daily use",
-    "Dishwasher-safe for quick and easy cleaning",
-    "Holds up to 500ml of wet or dry food"
+    "Programmable feeding schedule — up to 6 meals per day, settable by the minute",
+    "3.5L translucent food tank — easy to check remaining food at a glance",
+    "10-second voice recording — your pet eats to the comfort of your voice",
+    "Dual power supply — USB Type-A or 3x D batteries, auto-switches during power outages",
+    "Stainless steel bowl — hygienic, durable, and easy to wash",
+    "Locking lid mechanism — stays secure even if your pet pushes or bumps it",
+    "Built-in desiccant container — keeps dry food fresh longer",
+    "Removable washable tank — detaches for easy cleaning"
   ],
-  "tags": ["feeding", "health", "enrichment", "bestseller"],
+  "tags": ["feeding", "automatic", "smart-home", "bestseller", "new-arrival"],
   "inStock": true,
   "featured": true,
-  "weight": "280g"
+  "weight": "1800g"
 }

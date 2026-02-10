@@ -3,30 +3,38 @@ interface Props {
   title: string;
   description: string;
   href: string;
-  emoji: string;
+  image: string;
   accentColor: 'purple' | 'amber';
   productCount: number;
 }
 
-const { title, description, href, emoji, accentColor, productCount } = Astro.props;
+const { title, description, href, image, accentColor, productCount } = Astro.props;
 ---
 
 <a
   href={href}
-  class:list={[
-    'group relative rounded-2xl p-8 overflow-hidden transition-all duration-300 hover:shadow-lg flex flex-col items-center text-center',
-    accentColor === 'purple' ? 'bg-cat-purple-light hover:bg-cat-purple/15' : 'bg-dog-amber-light hover:bg-dog-amber/15',
-  ]}
+  class="group relative rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg block"
 >
-  <span class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">{emoji}</span>
-  <h3 class="font-display text-xl font-bold text-charcoal mb-2">{title}</h3>
-  <p class="text-sm text-charcoal-light mb-3">{description}</p>
-  <span
+  <!-- Background image -->
+  <div class="aspect-[4/3] overflow-hidden">
+    <img
+      src={image}
+      alt={title}
+      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      loading="lazy"
+    />
+  </div>
+  <!-- Overlay -->
+  <div
     class:list={[
-      'text-sm font-semibold',
-      accentColor === 'purple' ? 'text-cat-purple' : 'text-dog-amber',
+      'absolute inset-0 flex flex-col items-center justify-end p-6 text-center',
+      accentColor === 'purple' ? 'bg-gradient-to-t from-cat-purple/80 to-transparent' : 'bg-gradient-to-t from-dog-amber/80 to-transparent',
     ]}
   >
-    {productCount} products →
-  </span>
+    <h3 class="font-display text-2xl font-bold text-white mb-1">{title}</h3>
+    <p class="text-sm text-white/90 mb-2">{description}</p>
+    <span class="text-sm font-semibold text-white bg-white/20 px-3 py-1 rounded-full">
+      {productCount} products →
+    </span>
+  </div>
 </a>
