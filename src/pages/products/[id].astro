@@ -4,6 +4,7 @@ import Breadcrumb from '../../components/Breadcrumb.astro';
 import ProductButton from '../../components/ProductButton.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import { getCollection } from 'astro:content';
+import { url } from '../../utils/base';
 
 export async function getStaticPaths() {
   const products = await getCollection('products');
@@ -18,7 +19,7 @@ const { name, slug, price, comparePrice, image, imageAlt, description, shortDesc
 
 const discount = comparePrice ? Math.round((1 - price / comparePrice) * 100) : 0;
 const categoryLabel = category === 'cats' ? 'Cat Accessories' : 'Dog Accessories';
-const categoryHref = category === 'cats' ? '/cats/' : '/dogs/';
+const categoryHref = category === 'cats' ? url('/cats/') : url('/dogs/');
 
 // Related products: same category, excluding current
 const allProducts = await getCollection('products');
@@ -133,7 +134,7 @@ const related = allProducts
             price={price}
             image={image}
             description={shortDescription}
-            url={`/products/${slug}/`}
+            url={url(`/products/${slug}/`)}
             weight={weight}
             class="w-full sm:w-auto text-lg py-4 px-10"
           />

@@ -1,14 +1,15 @@
 ---
 import CartButton from './CartButton.astro';
+import { url } from '../utils/base';
 
 const currentPath = Astro.url.pathname;
 
 const navLinks = [
-  { href: '/shop/', label: 'Shop All' },
-  { href: '/cats/', label: 'Cats' },
-  { href: '/dogs/', label: 'Dogs' },
-  { href: '/about/', label: 'About' },
-  { href: '/contact/', label: 'Contact' },
+  { href: url('/shop/'), label: 'Shop All' },
+  { href: url('/cats/'), label: 'Cats' },
+  { href: url('/dogs/'), label: 'Dogs' },
+  { href: url('/about/'), label: 'About' },
+  { href: url('/contact/'), label: 'Contact' },
 ];
 ---
 
@@ -20,7 +21,7 @@ const navLinks = [
 
   <nav class="container-max flex items-center justify-between py-4">
     <!-- Logo -->
-    <a href="/" class="flex items-center gap-2 group">
+    <a href={url('/')} class="flex items-center gap-2 group">
       <span class="text-2xl">🐾</span>
       <span class="font-display text-2xl font-bold text-charcoal group-hover:text-coral transition-colors">
         PawHaus

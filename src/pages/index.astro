@@ -7,6 +7,7 @@ import ValueProps from '../components/ValueProps.astro';
 import TestimonialCard from '../components/TestimonialCard.astro';
 import NewsletterSignup from '../components/NewsletterSignup.astro';
 import { getCollection } from 'astro:content';
+import { url } from '../utils/base';
 
 const allProducts = await getCollection('products');
 const featuredProducts = allProducts.filter((p) => p.data.featured);
@@ -49,7 +50,7 @@ const testimonials = [
       <CategoryCard
         title="Cat Accessories"
         description="Toys, grooming, beds & more for your feline friend"
-        href="/cats/"
+        href={url('/cats/')}
         image="/images/category-cats.jpg"
         accentColor="purple"
         productCount={catCount}
@@ -57,7 +58,7 @@ const testimonials = [
       <CategoryCard
         title="Dog Accessories"
         description="Leashes, bowls, toys & more for your best buddy"
-        href="/dogs/"
+        href={url('/dogs/')}
         image="/images/category-dogs.jpg"
         accentColor="amber"
         productCount={dogCount}
@@ -87,7 +88,7 @@ const testimonials = [
     </div>
     <div class="text-center mt-8">
       <a
-        href="/shop/"
+        href={url('/shop/')}
         class="inline-flex items-center gap-2 bg-white hover:bg-cream text-charcoal font-semibold py-3 px-8 rounded-full border border-gray-light transition-all duration-200"
       >
         View All Products

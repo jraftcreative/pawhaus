@@ -1,4 +1,6 @@
 ---
+import { url } from '../utils/base';
+
 interface BreadcrumbItem {
   label: string;
   href?: string;
@@ -14,7 +16,7 @@ const { items } = Astro.props;
 <nav aria-label="Breadcrumb" class="container-max py-4">
   <ol class="flex items-center gap-2 text-sm text-charcoal-light flex-wrap">
     <li>
-      <a href="/" class="hover:text-coral transition-colors">Home</a>
+      <a href={url('/')} class="hover:text-coral transition-colors">Home</a>
     </li>
     {items.map((item, index) => (
       <>

@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
+import { url } from '../utils/base';
 ---
 
 <Layout
@@ -112,7 +113,7 @@ import Breadcrumb from '../components/Breadcrumb.astro';
             Many common questions are answered in our FAQ section.
           </p>
           <a
-            href="/faq/"
+            href={url('/faq/')}
             class="inline-flex items-center gap-2 text-coral font-semibold text-sm hover:underline"
           >
             Visit FAQ

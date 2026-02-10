@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import FaqAccordion from '../components/FaqAccordion.astro';
+import { url } from '../utils/base';
 
 const faqs = [
   {
@@ -66,7 +67,7 @@ const faqs = [
       <h2 class="font-display text-xl font-bold text-charcoal mb-2">Still have questions?</h2>
       <p class="text-charcoal-light text-sm mb-4">We're here to help! Reach out and we'll get back to you within 24 hours.</p>
       <a
-        href="/contact/"
+        href={url('/contact/')}
         class="inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white font-semibold py-3 px-8 rounded-full transition-colors"
       >
         Contact Us

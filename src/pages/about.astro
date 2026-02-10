@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
+import { url } from '../utils/base';
 ---
 
 <Layout
@@ -58,7 +59,7 @@ import Breadcrumb from '../components/Breadcrumb.astro';
       <h2 class="font-display text-xl font-bold text-charcoal mt-8">Get in Touch</h2>
       <p>
         Have questions or just want to share a photo of your fur baby? We'd love to hear from you!
-        <a href="/contact/" class="text-coral hover:underline">Contact us</a> anytime.
+        <a href={url('/contact/')} class="text-coral hover:underline">Contact us</a> anytime.
       </p>
     </div>
   </section>
