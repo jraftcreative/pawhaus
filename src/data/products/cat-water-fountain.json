@@ -1,0 +1,22 @@
+{
+  "name": "Automatic Cat Water Fountain",
+  "slug": "cat-water-fountain",
+  "price": 35,
+  "comparePrice": 49,
+  "category": "cats",
+  "image": "/images/products/cat-water-fountain.svg",
+  "imageAlt": "Automatic cat water fountain with flowing water stream and filtration system",
+  "shortDescription": "Keep your cat hydrated with a quiet, filtered water fountain that runs all day.",
+  "description": "Cats are naturally drawn to running water, and this ultra-quiet fountain encourages them to drink more throughout the day. The triple-filtration system removes hair, debris, and impurities, ensuring every sip is fresh and clean. Perfect for Singapore's warm climate where hydration is essential for your feline friend's health.",
+  "features": [
+    "Ultra-quiet pump operates below 30dB for undisturbed rest",
+    "Triple-filtration system with replaceable activated carbon filter",
+    "2-litre capacity keeps water flowing for days",
+    "BPA-free materials safe for daily use",
+    "LED indicator alerts you when water level is low"
+  ],
+  "tags": ["hydration", "bestseller", "health", "automatic"],
+  "inStock": true,
+  "featured": true,
+  "weight": "580g"
+}

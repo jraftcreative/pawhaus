@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Page Not Found — PawHaus">
+  <section class="container-max py-24 text-center">
+    <span class="text-7xl block mb-6">🐾</span>
+    <h1 class="font-display text-4xl md:text-5xl font-bold text-charcoal mb-4">
+      Oops! Page Not Found
+    </h1>
+    <p class="text-charcoal-light text-lg max-w-md mx-auto mb-8">
+      Looks like this page wandered off. Don't worry — let's get you back on track.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+      <a
+        href="/"
+        class="inline-flex items-center justify-center gap-2 bg-coral hover:bg-coral-dark text-white font-semibold py-3 px-8 rounded-full transition-colors"
+      >
+        Go Home
+      </a>
+      <a
+        href="/shop/"
+        class="inline-flex items-center justify-center gap-2 bg-white hover:bg-cream text-charcoal font-semibold py-3 px-8 rounded-full border border-gray-light transition-colors"
+      >
+        Browse Shop
+      </a>
+    </div>
+  </section>
+</Layout>

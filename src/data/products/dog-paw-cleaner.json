@@ -1,0 +1,22 @@
+{
+  "name": "Dog Paw Cleaner Cup",
+  "slug": "dog-paw-cleaner",
+  "price": 22,
+  "comparePrice": 30,
+  "category": "dogs",
+  "image": "/images/products/dog-paw-cleaner.svg",
+  "imageAlt": "Portable dog paw cleaner cup with soft silicone bristles for muddy paw washing",
+  "shortDescription": "Clean muddy paws in seconds before they hit your pristine floors.",
+  "description": "Singapore's rain showers mean muddy paws are a daily reality for dog owners. This portable paw cleaner cup lets you gently wash and dry each paw in seconds — just dip, twist, and done. The soft silicone bristles reach between paw pads without irritating sensitive skin, keeping your home spotless after every walk.",
+  "features": [
+    "Soft silicone bristles clean gently between paw pads",
+    "One-hand twist operation makes cleaning quick and easy",
+    "Removable bristle core for thorough rinsing after use",
+    "Compact size fits in your walking bag or by the front door",
+    "Suitable for small to medium dogs with paws up to 7cm wide"
+  ],
+  "tags": ["cleaning", "walking", "bestseller", "rainy-season"],
+  "inStock": true,
+  "featured": true,
+  "weight": "200g"
+}

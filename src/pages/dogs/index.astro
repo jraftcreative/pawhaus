@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import { getCollection } from 'astro:content';
+
+const allProducts = await getCollection('products');
+const dogProducts = allProducts.filter((p) => p.data.category === 'dogs');
+---
+
+<Layout
+  title="Dog Accessories — PawHaus"
+  description="Premium dog accessories in Singapore. Shop leashes, bowls, toys, grooming tools & more for your best buddy. Free shipping over S$50."
+>
+  <Breadcrumb items={[{ label: 'Dogs' }]} />
+
+  <section class="container-max pb-16">
+    <!-- Header -->
+    <div class="bg-dog-amber-light rounded-2xl p-8 md:p-12 mb-8 text-center">
+      <span class="text-5xl mb-4 block">🐶</span>
+      <h1 class="font-display text-3xl md:text-4xl font-bold text-charcoal">Dog Accessories</h1>
+      <p class="text-charcoal-light mt-2 max-w-lg mx-auto">
+        From outdoor adventures to mealtime fun — everything your good boy or girl deserves.
+      </p>
+    </div>
+
+    <!-- Products -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+      {dogProducts.map((product) => (
+        <ProductCard
+          slug={product.data.slug}
+          name={product.data.name}
+          price={product.data.price}
+          comparePrice={product.data.comparePrice}
+          image={product.data.image}
+          imageAlt={product.data.imageAlt}
+          shortDescription={product.data.shortDescription}
+          category={product.data.category}
+        />
+      ))}
+    </div>
+  </section>
+</Layout>

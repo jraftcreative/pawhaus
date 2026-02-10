@@ -1,0 +1,22 @@
+{
+  "name": "No-Pull Dog Harness",
+  "slug": "dog-no-pull-harness",
+  "price": 28,
+  "comparePrice": 39,
+  "category": "dogs",
+  "image": "/images/products/dog-no-pull-harness.svg",
+  "imageAlt": "Adjustable no-pull dog harness with front clip and padded chest plate",
+  "shortDescription": "Walk your dog without the pulling — this front-clip harness makes walks enjoyable for both of you.",
+  "description": "Tired of being dragged down the pavement? This no-pull harness redirects your dog's forward momentum to the side, naturally discouraging pulling without choking or discomfort. The padded chest plate distributes pressure evenly, and four adjustment points ensure a snug, custom fit for any breed. Take back control of your daily walks.",
+  "features": [
+    "Front-clip design gently redirects pulling without choking",
+    "Padded chest plate and straps prevent chafing and rubbing",
+    "Four adjustment points for a precise, custom fit",
+    "Reflective stitching for visibility during evening walks",
+    "Durable nylon construction with reinforced metal D-ring"
+  ],
+  "tags": ["walking", "harness", "training", "new-arrival"],
+  "inStock": true,
+  "featured": false,
+  "weight": "240g"
+}

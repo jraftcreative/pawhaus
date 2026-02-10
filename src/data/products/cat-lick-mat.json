@@ -1,0 +1,22 @@
+{
+  "name": "Cat Lick Mat (Slow Feeder)",
+  "slug": "cat-lick-mat",
+  "price": 18,
+  "comparePrice": 25,
+  "category": "cats",
+  "image": "/images/products/cat-lick-mat.svg",
+  "imageAlt": "Textured silicone cat lick mat with suction cups for slow feeding enrichment",
+  "shortDescription": "Slow down mealtime and reduce anxiety with this enrichment lick mat for cats.",
+  "description": "Licking is a naturally calming behaviour for cats, and this textured mat turns treat time into a soothing enrichment activity. Spread wet food, yoghurt, or puree across the surface and watch your cat enjoy a longer, more satisfying meal. Great for keeping anxious cats calm during thunderstorms or vet visits.",
+  "features": [
+    "Food-grade silicone with multiple textured zones for varied licking",
+    "Strong suction cups stick securely to floors, walls, or tubs",
+    "Dishwasher-safe for effortless cleaning",
+    "Helps reduce anxiety, boredom, and fast eating",
+    "Freezer-safe — freeze treats for extended enrichment sessions"
+  ],
+  "tags": ["feeding", "enrichment", "anxiety-relief", "new-arrival"],
+  "inStock": true,
+  "featured": false,
+  "weight": "120g"
+}

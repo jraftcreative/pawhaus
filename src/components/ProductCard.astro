@@ -1,0 +1,59 @@
+---
+interface Props {
+  slug: string;
+  name: string;
+  price: number;
+  comparePrice?: number;
+  image: string;
+  imageAlt: string;
+  shortDescription: string;
+  category: 'cats' | 'dogs';
+}
+
+const { slug, name, price, comparePrice, image, imageAlt, shortDescription, category } = Astro.props;
+const discount = comparePrice ? Math.round((1 - price / comparePrice) * 100) : 0;
+---
+
+<a
+  href={`/products/${slug}/`}
+  class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col"
+>
+  <!-- Image -->
+  <div class="relative aspect-square overflow-hidden bg-cream">
+    <img
+      src={image}
+      alt={imageAlt}
+      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+      loading="lazy"
+    />
+    {discount > 0 && (
+      <span class="absolute top-3 left-3 bg-coral text-white text-xs font-bold px-2.5 py-1 rounded-full">
+        -{discount}%
+      </span>
+    )}
+    <span
+      class:list={[
+        'absolute top-3 right-3 text-xs font-semibold px-2.5 py-1 rounded-full',
+        category === 'cats' ? 'bg-cat-purple-light text-cat-purple' : 'bg-dog-amber-light text-dog-amber',
+      ]}
+    >
+      {category === 'cats' ? '🐱 Cats' : '🐶 Dogs'}
+    </span>
+  </div>
+
+  <!-- Content -->
+  <div class="p-4 flex flex-col flex-1">
+    <h3 class="font-display font-semibold text-charcoal group-hover:text-coral transition-colors line-clamp-2">
+      {name}
+    </h3>
+    <p class="text-sm text-charcoal-light mt-1 line-clamp-2 flex-1">
+      {shortDescription}
+    </p>
+    <div class="flex items-center gap-2 mt-3">
+      <span class="text-lg font-bold text-coral">S${price.toFixed(2)}</span>
+      {comparePrice && (
+        <span class="text-sm text-gray-warm line-through">S${comparePrice.toFixed(2)}</span>
+      )}
+    </div>
+  </div>
+</a>

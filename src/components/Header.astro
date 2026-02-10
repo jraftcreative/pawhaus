@@ -1,0 +1,93 @@
+---
+import CartButton from './CartButton.astro';
+
+const currentPath = Astro.url.pathname;
+
+const navLinks = [
+  { href: '/shop/', label: 'Shop All' },
+  { href: '/cats/', label: 'Cats' },
+  { href: '/dogs/', label: 'Dogs' },
+  { href: '/about/', label: 'About' },
+  { href: '/contact/', label: 'Contact' },
+];
+---
+
+<header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-light">
+  <!-- Free shipping banner -->
+  <div class="bg-coral text-white text-center text-sm py-1.5 font-medium">
+    Free shipping on orders over S$50 🐾
+  </div>
+
+  <nav class="container-max flex items-center justify-between py-4">
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-2 group">
+      <span class="text-2xl">🐾</span>
+      <span class="font-display text-2xl font-bold text-charcoal group-hover:text-coral transition-colors">
+        PawHaus
+      </span>
+    </a>
+
+    <!-- Desktop nav -->
+    <ul class="hidden md:flex items-center gap-8">
+      {navLinks.map(({ href, label }) => (
+        <li>
+          <a
+            href={href}
+            class:list={[
+              'text-sm font-medium transition-colors hover:text-coral',
+              currentPath.startsWith(href) ? 'text-coral' : 'text-charcoal',
+            ]}
+          >
+            {label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <!-- Right side: Cart + Mobile menu -->
+    <div class="flex items-center gap-4">
+      <CartButton />
+
+      <!-- Mobile menu button -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden p-2 cursor-pointer"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <svg class="h-6 w-6 text-charcoal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-light bg-white">
+    <ul class="flex flex-col py-4">
+      {navLinks.map(({ href, label }) => (
+        <li>
+          <a
+            href={href}
+            class:list={[
+              'block px-6 py-3 text-sm font-medium transition-colors hover:bg-cream hover:text-coral',
+              currentPath.startsWith(href) ? 'text-coral bg-cream' : 'text-charcoal',
+            ]}
+          >
+            {label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => {
+    const isOpen = !menu?.classList.contains('hidden');
+    menu?.classList.toggle('hidden');
+    btn.setAttribute('aria-expanded', String(!isOpen));
+  });
+</script>

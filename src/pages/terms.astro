@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+---
+
+<Layout
+  title="Terms of Service — PawHaus"
+  description="PawHaus terms of service. Read the terms and conditions governing your use of our website and purchases."
+>
+  <Breadcrumb items={[{ label: 'Terms of Service' }]} />
+
+  <section class="container-max pb-16 max-w-3xl mx-auto">
+    <h1 class="font-display text-3xl md:text-4xl font-bold text-charcoal mb-2">Terms of Service</h1>
+    <p class="text-sm text-charcoal-light mb-8">Last updated: February 2026</p>
+
+    <div class="space-y-8 text-charcoal-light leading-relaxed text-sm">
+      <div>
+        <h2 class="font-display text-lg font-bold text-charcoal mb-3">1. General</h2>
+        <p>
+          These Terms of Service ("Terms") govern your use of the PawHaus website (pawhaus.com) and any
+          purchases made through it. By accessing our website or placing an order, you agree to be bound
+          by these Terms. PawHaus is operated from Singapore.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-lg font-bold text-charcoal mb-3">2. Products and Pricing</h2>
+        <ul class="list-disc list-inside space-y-1 ml-2">
+          <li>All prices are listed in Singapore Dollars (SGD) and include GST where applicable.</li>
+          <li>We reserve the right to change prices at any time without prior notice.</li>
+          <li>Product images are for illustration purposes. Actual products may vary slightly in appearance.</li>
+          <li>We make every effort to ensure product descriptions are accurate but do not warrant that they are error-free.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="font-display text-lg font-bold text-charcoal mb-3">3. Orders and Payment</h2>
+        <ul class="list-disc list-inside space-y-1 ml-2">
+          <li>An order is confirmed only after we have processed your payment successfully.</li>
+          <li>Payment is processed securely through Stripe. We do not store your credit card details.</li>
+          <li>We reserve the right to refuse or cancel any order at our discretion.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="font-display text-lg font-bold text-charcoal mb-3">4. Shipping</h2>
+        <ul class="list-disc list-inside space-y-1 ml-2">
+          <li>We currently ship within Singapore only.</li>
+          <li>Standard delivery takes 7–14 business days.</li>
+          <li>Free shipping is available on orders over S$50. Orders under S$50 incur a flat S$4.90 shipping fee.</li>
+          <li>Delivery times are estimates and not guaranteed. We are not liable for delays caused by shipping carriers.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="font-display text-lg font-bold text-charcoal mb-3">5. Returns and Refunds</h2>
+        <ul class="list-disc list-inside space-y-1 ml-2">
+          <li>We offer a 30-day return policy from the date of delivery.</li>
+          <li>Items must be unused, in original condition, and in original packaging.</li>
+          <li>To initiate a return, contact us at <a href="mailto:hello@pawhaus.com" class="text-coral hover:underline">hello@pawhaus.com</a> with your order number.</li>
+          <li>Refunds will be processed to the original payment method within 5–10 business days after we receive the returned item.</li>
+          <li>Shipping costs are non-refundable unless the return is due to our error.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="font-display text-lg font-bold text-charcoal mb-3">6. Intellectual Property</h2>
+        <p>
+          All content on this website, including text, images, logos, and design, is the property of PawHaus
+          and is protected by copyright and intellectual property laws. You may not reproduce, distribute,
+          or use any content without our written permission.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-lg font-bold text-charcoal mb-3">7. Limitation of Liability</h2>
+        <p>
+          To the fullest extent permitted by Singapore law, PawHaus shall not be liable for any indirect,
+          incidental, or consequential damages arising from your use of our website or products. Our total
+          liability shall not exceed the amount paid by you for the specific product giving rise to the claim.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-lg font-bold text-charcoal mb-3">8. Governing Law</h2>
+        <p>
+          These Terms shall be governed by and construed in accordance with the laws of the Republic of
+          Singapore. Any disputes shall be subject to the exclusive jurisdiction of the courts of Singapore.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-lg font-bold text-charcoal mb-3">9. Changes to These Terms</h2>
+        <p>
+          We reserve the right to update these Terms at any time. Changes will be posted on this page with
+          an updated revision date. Your continued use of the website after changes constitutes acceptance
+          of the new Terms.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-lg font-bold text-charcoal mb-3">10. Contact</h2>
+        <p>
+          For any questions about these Terms, please contact us at
+          <a href="mailto:hello@pawhaus.com" class="text-coral hover:underline">hello@pawhaus.com</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

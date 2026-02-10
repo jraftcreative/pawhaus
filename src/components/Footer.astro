@@ -1,0 +1,64 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-charcoal text-white mt-20">
+  <div class="container-max py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Brand -->
+      <div class="sm:col-span-2 lg:col-span-1">
+        <a href="/" class="flex items-center gap-2 mb-4">
+          <span class="text-2xl">🐾</span>
+          <span class="font-display text-xl font-bold">PawHaus</span>
+        </a>
+        <p class="text-gray-warm text-sm leading-relaxed">
+          Premium pet accessories for cats &amp; dogs in Singapore.
+          Making tails wag and purrs louder since 2025.
+        </p>
+      </div>
+
+      <!-- Shop -->
+      <div>
+        <h3 class="font-display font-semibold text-lg mb-4">Shop</h3>
+        <ul class="space-y-2">
+          <li><a href="/shop/" class="text-sm text-gray-warm hover:text-coral transition-colors">All Products</a></li>
+          <li><a href="/cats/" class="text-sm text-gray-warm hover:text-coral transition-colors">Cat Accessories</a></li>
+          <li><a href="/dogs/" class="text-sm text-gray-warm hover:text-coral transition-colors">Dog Accessories</a></li>
+        </ul>
+      </div>
+
+      <!-- Help -->
+      <div>
+        <h3 class="font-display font-semibold text-lg mb-4">Help</h3>
+        <ul class="space-y-2">
+          <li><a href="/faq/" class="text-sm text-gray-warm hover:text-coral transition-colors">FAQ</a></li>
+          <li><a href="/contact/" class="text-sm text-gray-warm hover:text-coral transition-colors">Contact Us</a></li>
+          <li><a href="/about/" class="text-sm text-gray-warm hover:text-coral transition-colors">About Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h3 class="font-display font-semibold text-lg mb-4">Legal</h3>
+        <ul class="space-y-2">
+          <li><a href="/privacy/" class="text-sm text-gray-warm hover:text-coral transition-colors">Privacy Policy</a></li>
+          <li><a href="/terms/" class="text-sm text-gray-warm hover:text-coral transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-charcoal-light mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-warm">
+        &copy; {currentYear} PawHaus. All rights reserved.
+      </p>
+      <div class="flex items-center gap-2 text-sm text-gray-warm">
+        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        <span>Based in Singapore</span>
+      </div>
+    </div>
+  </div>
+</footer>

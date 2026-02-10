@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import FaqAccordion from '../components/FaqAccordion.astro';
+
+const faqs = [
+  {
+    question: 'How long does shipping take?',
+    answer: 'Standard shipping within Singapore takes 7–14 business days. We ship from our fulfilment partners and you\'ll receive a tracking number once your order is dispatched.',
+  },
+  {
+    question: 'Is shipping free?',
+    answer: 'Yes! We offer free standard shipping on all orders over S$50 within Singapore. Orders under S$50 have a flat shipping fee of S$4.90.',
+  },
+  {
+    question: 'What payment methods do you accept?',
+    answer: 'We accept all major credit and debit cards (Visa, Mastercard, American Express) through our secure Stripe-powered checkout. All prices are in Singapore Dollars (SGD).',
+  },
+  {
+    question: 'Can I return or exchange a product?',
+    answer: 'Absolutely! We offer a 30-day return policy. If you\'re not satisfied with your purchase, contact us within 30 days of delivery and we\'ll arrange a return or exchange. Items must be unused and in original packaging.',
+  },
+  {
+    question: 'How do I track my order?',
+    answer: 'Once your order ships, you\'ll receive an email with your tracking number and a link to track your package. You can also contact us at <a href="mailto:hello@pawhaus.com" class="text-coral hover:underline">hello@pawhaus.com</a> with your order number.',
+  },
+  {
+    question: 'Are your products safe for pets?',
+    answer: 'Yes! All products in our store are made from pet-safe, non-toxic materials. We carefully vet every item before adding it to our catalogue to ensure it meets quality and safety standards.',
+  },
+  {
+    question: 'Do you ship internationally?',
+    answer: 'Currently, we only ship within Singapore. We\'re working on expanding to Malaysia and other Southeast Asian countries soon. Stay tuned!',
+  },
+  {
+    question: 'How do I contact customer support?',
+    answer: 'You can reach us via email at <a href="mailto:hello@pawhaus.com" class="text-coral hover:underline">hello@pawhaus.com</a> or WhatsApp at <a href="https://wa.me/6591234567" class="text-coral hover:underline">+65 9123 4567</a>. We typically respond within 24 hours.',
+  },
+  {
+    question: 'Can I cancel or modify my order?',
+    answer: 'If your order hasn\'t shipped yet, we can cancel or modify it. Please contact us as soon as possible with your order number. Once an order has shipped, it cannot be cancelled but you can return it under our 30-day return policy.',
+  },
+  {
+    question: 'Do you offer wholesale or bulk pricing?',
+    answer: 'Yes! If you\'re a pet shop, groomer, or buying in bulk, contact us at <a href="mailto:hello@pawhaus.com" class="text-coral hover:underline">hello@pawhaus.com</a> for special pricing.',
+  },
+];
+---
+
+<Layout
+  title="Frequently Asked Questions — PawHaus"
+  description="Common questions about shipping, returns, payments, and more at PawHaus. Find answers to your pet accessory shopping questions."
+>
+  <Breadcrumb items={[{ label: 'FAQ' }]} />
+
+  <section class="container-max pb-16 max-w-3xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-5xl mb-4 block">❓</span>
+      <h1 class="font-display text-3xl md:text-4xl font-bold text-charcoal">Frequently Asked Questions</h1>
+      <p class="text-charcoal-light mt-3">Everything you need to know about shopping at PawHaus</p>
+    </div>
+
+    <FaqAccordion items={faqs} />
+
+    <div class="mt-12 text-center bg-coral/5 rounded-2xl p-8">
+      <h2 class="font-display text-xl font-bold text-charcoal mb-2">Still have questions?</h2>
+      <p class="text-charcoal-light text-sm mb-4">We're here to help! Reach out and we'll get back to you within 24 hours.</p>
+      <a
+        href="/contact/"
+        class="inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white font-semibold py-3 px-8 rounded-full transition-colors"
+      >
+        Contact Us
+      </a>
+    </div>
+  </section>
+</Layout>

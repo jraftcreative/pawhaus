@@ -1,0 +1,118 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+import ProductCard from '../components/ProductCard.astro';
+import ValueProps from '../components/ValueProps.astro';
+import TestimonialCard from '../components/TestimonialCard.astro';
+import NewsletterSignup from '../components/NewsletterSignup.astro';
+import { getCollection } from 'astro:content';
+
+const allProducts = await getCollection('products');
+const featuredProducts = allProducts.filter((p) => p.data.featured);
+const catCount = allProducts.filter((p) => p.data.category === 'cats').length;
+const dogCount = allProducts.filter((p) => p.data.category === 'dogs').length;
+
+const testimonials = [
+  {
+    name: 'Sarah T.',
+    pet: 'Cat mom to Mochi & Latte',
+    text: 'The water fountain is amazing! My cats drink so much more water now. Great quality for the price.',
+    rating: 5,
+  },
+  {
+    name: 'David L.',
+    pet: 'Dog dad to Cooper',
+    text: 'The no-pull harness changed our walks completely. Cooper is so much calmer and I have better control.',
+    rating: 5,
+  },
+  {
+    name: 'Michelle K.',
+    pet: 'Cat & dog owner',
+    text: 'Fast delivery and everything was well packaged. The cooling mats are a lifesaver in Singapore weather!',
+    rating: 5,
+  },
+];
+---
+
+<Layout title="PawHaus — Premium Pet Accessories for Cats & Dogs in Singapore">
+  <HeroSection />
+
+  <ValueProps />
+
+  <!-- Categories -->
+  <section class="container-max py-12">
+    <h2 class="font-display text-3xl font-bold text-charcoal text-center mb-8">
+      Shop by Pet
+    </h2>
+    <div class="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+      <CategoryCard
+        title="Cat Accessories"
+        description="Toys, grooming, beds & more for your feline friend"
+        href="/cats/"
+        emoji="🐱"
+        accentColor="purple"
+        productCount={catCount}
+      />
+      <CategoryCard
+        title="Dog Accessories"
+        description="Leashes, bowls, toys & more for your best buddy"
+        href="/dogs/"
+        emoji="🐶"
+        accentColor="amber"
+        productCount={dogCount}
+      />
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="container-max py-12">
+    <div class="text-center mb-8">
+      <h2 class="font-display text-3xl font-bold text-charcoal">Featured Products</h2>
+      <p class="text-charcoal-light mt-2">Handpicked favourites loved by pet parents</p>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+      {featuredProducts.map((product) => (
+        <ProductCard
+          slug={product.data.slug}
+          name={product.data.name}
+          price={product.data.price}
+          comparePrice={product.data.comparePrice}
+          image={product.data.image}
+          imageAlt={product.data.imageAlt}
+          shortDescription={product.data.shortDescription}
+          category={product.data.category}
+        />
+      ))}
+    </div>
+    <div class="text-center mt-8">
+      <a
+        href="/shop/"
+        class="inline-flex items-center gap-2 bg-white hover:bg-cream text-charcoal font-semibold py-3 px-8 rounded-full border border-gray-light transition-all duration-200"
+      >
+        View All Products
+        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="container-max py-12">
+    <div class="text-center mb-8">
+      <h2 class="font-display text-3xl font-bold text-charcoal">What Pet Parents Say</h2>
+      <p class="text-charcoal-light mt-2">Real reviews from our happy customers</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      {testimonials.map((t) => (
+        <TestimonialCard {...t} />
+      ))}
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="container-max py-12">
+    <NewsletterSignup />
+  </section>
+</Layout>

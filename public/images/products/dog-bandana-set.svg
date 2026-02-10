@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" rx="24" fill="#FEF3C7"/>
+  <!-- Bandana 1 (back) -->
+  <polygon points="120,140 280,140 200,260" fill="#D97706" opacity="0.5"/>
+  <polygon points="128,148 272,148 200,252" fill="#FBBF24" opacity="0.5"/>
+  <!-- Bandana 2 (front) -->
+  <polygon points="110,160 290,160 200,290" fill="#F59E0B"/>
+  <polygon points="120,168 280,168 200,280" fill="#FBBF24"/>
+  <!-- Pattern on front bandana -->
+  <circle cx="180" cy="205" r="5" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="220" cy="205" r="5" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="200" cy="230" r="5" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="190" cy="250" r="4" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="210" cy="250" r="4" fill="#F59E0B" opacity="0.6"/>
+  <!-- Fold at top -->
+  <path d="M110 160 Q140 150 200 155 Q260 150 290 160" stroke="#D97706" stroke-width="2" fill="none"/>
+  <text x="200" y="350" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#B45309">Dog Bandana Set</text>
+</svg>

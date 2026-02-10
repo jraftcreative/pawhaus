@@ -1,0 +1,22 @@
+{
+  "name": "Portable Dog Water Bottle",
+  "slug": "dog-water-bottle",
+  "price": 22,
+  "comparePrice": 30,
+  "category": "dogs",
+  "image": "/images/products/dog-water-bottle.svg",
+  "imageAlt": "Portable dog water bottle with built-in drinking trough and leak-proof lock",
+  "shortDescription": "A leak-proof water bottle with a built-in trough so your dog can drink anywhere, anytime.",
+  "description": "Heading to East Coast Park or Botanic Gardens? Keep your dog hydrated on the go with this cleverly designed water bottle that doubles as a drinking bowl. One press releases water into the built-in trough, and any unfinished water flows back into the bottle — zero waste. The leak-proof lock means it stays dry in your bag.",
+  "features": [
+    "One-button press releases water into a built-in drinking trough",
+    "Unused water flows back into the bottle to prevent waste",
+    "Leak-proof lock mechanism keeps your bag completely dry",
+    "500ml capacity for long walks and outdoor adventures",
+    "Lightweight BPA-free Tritan plastic is durable and safe"
+  ],
+  "tags": ["walking", "hydration", "outdoor", "travel"],
+  "inStock": true,
+  "featured": false,
+  "weight": "180g"
+}

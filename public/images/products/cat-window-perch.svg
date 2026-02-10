@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" rx="24" fill="#EDE9FE"/>
+  <!-- Window frame -->
+  <rect x="110" y="70" width="180" height="200" rx="8" fill="#C4B5FD" stroke="#8B5CF6" stroke-width="4"/>
+  <line x1="200" y1="70" x2="200" y2="270" stroke="#8B5CF6" stroke-width="3"/>
+  <line x1="110" y1="170" x2="290" y2="170" stroke="#8B5CF6" stroke-width="3"/>
+  <!-- Sky in window -->
+  <circle cx="160" cy="120" r="15" fill="#A78BFA" opacity="0.4"/>
+  <circle cx="240" cy="130" r="10" fill="#A78BFA" opacity="0.3"/>
+  <!-- Perch/shelf -->
+  <path d="M95 270 L305 270 L295 290 L105 290 Z" fill="#8B5CF6"/>
+  <rect x="100" y="260" width="200" height="14" rx="4" fill="#7C3AED"/>
+  <!-- Cushion on perch -->
+  <ellipse cx="200" cy="258" rx="80" ry="10" fill="#A78BFA"/>
+  <!-- Suction cups -->
+  <circle cx="130" cy="268" r="6" fill="#6D28D9"/>
+  <circle cx="270" cy="268" r="6" fill="#6D28D9"/>
+  <text x="200" y="350" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#6D28D9">Window Perch</text>
+</svg>

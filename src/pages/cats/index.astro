@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import { getCollection } from 'astro:content';
+
+const allProducts = await getCollection('products');
+const catProducts = allProducts.filter((p) => p.data.category === 'cats');
+---
+
+<Layout
+  title="Cat Accessories — PawHaus"
+  description="Premium cat accessories in Singapore. Shop water fountains, toys, grooming tools, beds & more for your feline friend. Free shipping over S$50."
+>
+  <Breadcrumb items={[{ label: 'Cats' }]} />
+
+  <section class="container-max pb-16">
+    <!-- Header -->
+    <div class="bg-cat-purple-light rounded-2xl p-8 md:p-12 mb-8 text-center">
+      <span class="text-5xl mb-4 block">🐱</span>
+      <h1 class="font-display text-3xl md:text-4xl font-bold text-charcoal">Cat Accessories</h1>
+      <p class="text-charcoal-light mt-2 max-w-lg mx-auto">
+        From interactive toys to cozy beds — everything to keep your feline friend happy, healthy, and entertained.
+      </p>
+    </div>
+
+    <!-- Products -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+      {catProducts.map((product) => (
+        <ProductCard
+          slug={product.data.slug}
+          name={product.data.name}
+          price={product.data.price}
+          comparePrice={product.data.comparePrice}
+          image={product.data.image}
+          imageAlt={product.data.imageAlt}
+          shortDescription={product.data.shortDescription}
+          category={product.data.category}
+        />
+      ))}
+    </div>
+  </section>
+</Layout>

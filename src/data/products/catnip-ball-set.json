@@ -1,0 +1,22 @@
+{
+  "name": "Catnip Ball Toy Set (3pcs)",
+  "slug": "catnip-ball-set",
+  "price": 12,
+  "comparePrice": 18,
+  "category": "cats",
+  "image": "/images/products/catnip-ball-set.svg",
+  "imageAlt": "Three colourful catnip-infused balls in different textures for cats to bat and chase",
+  "shortDescription": "Three catnip-infused balls that will have your cat batting, chasing, and rolling with joy.",
+  "description": "Unleash your cat's playful side with this set of three catnip-filled balls, each with a different texture to keep things interesting. The compressed catnip core slowly releases its irresistible scent over weeks of play. Lightweight and perfectly sized for batting across your floor, they are the simplest way to keep your cat active and entertained.",
+  "features": [
+    "Three unique textures — sisal, felt, and crinkle for varied play",
+    "Compressed catnip core releases scent gradually over weeks",
+    "Lightweight design rolls easily on hard floors and tiles",
+    "Durable construction withstands biting and bunny-kicking",
+    "100% natural catnip sourced from organic farms"
+  ],
+  "tags": ["toys", "catnip", "value-set", "indoor-cats"],
+  "inStock": true,
+  "featured": false,
+  "weight": "90g"
+}

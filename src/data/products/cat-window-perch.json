@@ -1,0 +1,22 @@
+{
+  "name": "Cat Window Perch Hammock",
+  "slug": "cat-window-perch",
+  "price": 32,
+  "comparePrice": 45,
+  "category": "cats",
+  "image": "/images/products/cat-window-perch.svg",
+  "imageAlt": "Cat window perch hammock mounted with suction cups for window-side lounging",
+  "shortDescription": "Give your cat a front-row seat to the outside world with this sturdy window perch.",
+  "description": "Every cat deserves a window seat. This heavy-duty hammock perch mounts to any glass window with industrial-strength suction cups, giving your cat the perfect vantage point to watch birds, people, and the world go by. It is like cat TV, but better. Ideal for high-rise HDB and condo living where outdoor access is limited.",
+  "features": [
+    "Industrial-strength suction cups hold up to 15kg securely",
+    "Breathable mesh fabric keeps cats cool during sunbathing",
+    "No drilling or tools required — installs in under 2 minutes",
+    "Space-saving design perfect for small Singapore apartments",
+    "Removable fabric cover is machine-washable"
+  ],
+  "tags": ["furniture", "enrichment", "window", "bestseller", "space-saving"],
+  "inStock": true,
+  "featured": true,
+  "weight": "480g"
+}

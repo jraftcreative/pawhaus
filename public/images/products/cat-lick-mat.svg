@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" rx="24" fill="#EDE9FE"/>
+  <!-- Mat base -->
+  <rect x="100" y="120" width="200" height="180" rx="20" fill="#8B5CF6"/>
+  <rect x="110" y="130" width="180" height="160" rx="14" fill="#A78BFA"/>
+  <!-- Texture pattern - bumps -->
+  <circle cx="150" cy="170" r="10" fill="#8B5CF6" opacity="0.6"/>
+  <circle cx="180" cy="170" r="10" fill="#8B5CF6" opacity="0.6"/>
+  <circle cx="210" cy="170" r="10" fill="#8B5CF6" opacity="0.6"/>
+  <circle cx="240" cy="170" r="10" fill="#8B5CF6" opacity="0.6"/>
+  <rect x="135" y="195" width="130" height="6" rx="3" fill="#8B5CF6" opacity="0.5"/>
+  <rect x="135" y="210" width="130" height="6" rx="3" fill="#8B5CF6" opacity="0.5"/>
+  <rect x="135" y="225" width="130" height="6" rx="3" fill="#8B5CF6" opacity="0.5"/>
+  <circle cx="150" cy="255" r="8" fill="#8B5CF6" opacity="0.6"/>
+  <circle cx="175" cy="255" r="8" fill="#8B5CF6" opacity="0.6"/>
+  <circle cx="200" cy="255" r="8" fill="#8B5CF6" opacity="0.6"/>
+  <circle cx="225" cy="255" r="8" fill="#8B5CF6" opacity="0.6"/>
+  <circle cx="250" cy="255" r="8" fill="#8B5CF6" opacity="0.6"/>
+  <text x="200" y="350" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#6D28D9">Cat Lick Mat</text>
+</svg>

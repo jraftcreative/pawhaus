@@ -1,0 +1,22 @@
+{
+  "name": "Cat Cooling Mat",
+  "slug": "cat-cooling-mat",
+  "price": 28,
+  "comparePrice": 39,
+  "category": "cats",
+  "image": "/images/products/cat-cooling-mat.svg",
+  "imageAlt": "Blue self-cooling gel mat for cats to rest on during warm weather",
+  "shortDescription": "Help your cat beat Singapore's heat with a self-cooling gel mat that needs no electricity.",
+  "description": "Singapore's tropical climate can be tough on our furry friends. This pressure-activated cooling mat drops up to 7 degrees below ambient temperature the moment your cat lies down — no refrigeration or power needed. Lightweight and foldable, it fits perfectly in your cat's favourite napping spot.",
+  "features": [
+    "Pressure-activated gel cools up to 7°C below room temperature",
+    "No electricity, water, or refrigeration required",
+    "Scratch-resistant Oxford fabric outer layer",
+    "Foldable and portable — great for travel or vet visits",
+    "Non-toxic gel is completely safe even if punctured"
+  ],
+  "tags": ["cooling", "comfort", "summer-essential", "health"],
+  "inStock": true,
+  "featured": false,
+  "weight": "450g"
+}

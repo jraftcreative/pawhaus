@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+---
+
+<Layout
+  title="About PawHaus — Our Story"
+  description="PawHaus is a Singapore-based pet accessories store dedicated to bringing you quality products for your cats and dogs at fair prices."
+>
+  <Breadcrumb items={[{ label: 'About Us' }]} />
+
+  <section class="container-max pb-16 max-w-3xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-5xl mb-4 block">🏠</span>
+      <h1 class="font-display text-3xl md:text-4xl font-bold text-charcoal">About PawHaus</h1>
+      <p class="text-charcoal-light mt-3 text-lg">A home for happy pets</p>
+    </div>
+
+    <div class="prose max-w-none space-y-6 text-charcoal-light leading-relaxed">
+      <h2 class="font-display text-xl font-bold text-charcoal">Our Story</h2>
+      <p>
+        PawHaus was born from a simple idea: every pet deserves quality accessories that don't break the bank.
+        As pet parents ourselves based in Singapore, we noticed that great pet products were often overpriced
+        or hard to find locally. So we set out to change that.
+      </p>
+
+      <h2 class="font-display text-xl font-bold text-charcoal">Our Mission</h2>
+      <p>
+        We carefully curate a selection of premium pet accessories for cats and dogs, sourcing directly
+        from trusted manufacturers to bring you the best prices. Every product in our store has been
+        researched, reviewed, and selected with your pet's happiness in mind.
+      </p>
+
+      <h2 class="font-display text-xl font-bold text-charcoal">Why PawHaus?</h2>
+      <div class="grid sm:grid-cols-2 gap-6 not-prose mt-4">
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <span class="text-2xl mb-2 block">🎯</span>
+          <h3 class="font-display font-semibold text-charcoal mb-1">Curated Selection</h3>
+          <p class="text-sm text-charcoal-light">We don't sell everything — just the products we'd buy for our own pets.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <span class="text-2xl mb-2 block">💰</span>
+          <h3 class="font-display font-semibold text-charcoal mb-1">Fair Pricing</h3>
+          <p class="text-sm text-charcoal-light">Direct sourcing means lower prices without compromising on quality.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <span class="text-2xl mb-2 block">🇸🇬</span>
+          <h3 class="font-display font-semibold text-charcoal mb-1">Singapore-Based</h3>
+          <p class="text-sm text-charcoal-light">Local support, understanding of our tropical climate and pet needs.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <span class="text-2xl mb-2 block">❤️</span>
+          <h3 class="font-display font-semibold text-charcoal mb-1">Pet Parents First</h3>
+          <p class="text-sm text-charcoal-light">We're pet owners too. Your satisfaction is our top priority.</p>
+        </div>
+      </div>
+
+      <h2 class="font-display text-xl font-bold text-charcoal mt-8">Get in Touch</h2>
+      <p>
+        Have questions or just want to share a photo of your fur baby? We'd love to hear from you!
+        <a href="/contact/" class="text-coral hover:underline">Contact us</a> anytime.
+      </p>
+    </div>
+  </section>
+</Layout>

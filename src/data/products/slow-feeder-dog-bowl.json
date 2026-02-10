@@ -1,0 +1,22 @@
+{
+  "name": "Slow Feeder Dog Bowl",
+  "slug": "slow-feeder-dog-bowl",
+  "price": 18,
+  "comparePrice": 25,
+  "category": "dogs",
+  "image": "/images/products/slow-feeder-dog-bowl.svg",
+  "imageAlt": "Non-slip slow feeder dog bowl with maze pattern to prevent fast eating",
+  "shortDescription": "Slow down your speed-eater and make mealtime a healthy, enriching puzzle.",
+  "description": "Does your dog inhale their food in 30 seconds flat? This maze-patterned slow feeder bowl turns meals into a fun challenge, extending eating time by up to 10x. Slower eating means better digestion, less bloating, and a mentally stimulated pup. The non-slip base stays put even with the most enthusiastic eaters.",
+  "features": [
+    "Maze pattern extends mealtime by up to 10x for healthier digestion",
+    "Non-slip rubber base prevents sliding on tiles and hard floors",
+    "BPA-free, food-grade plastic safe for daily use",
+    "Dishwasher-safe for quick and easy cleaning",
+    "Holds up to 500ml of wet or dry food"
+  ],
+  "tags": ["feeding", "health", "enrichment", "bestseller"],
+  "inStock": true,
+  "featured": true,
+  "weight": "280g"
+}

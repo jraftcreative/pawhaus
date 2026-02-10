@@ -1,0 +1,22 @@
+{
+  "name": "Dog Grooming Glove",
+  "slug": "dog-grooming-glove",
+  "price": 15,
+  "comparePrice": 22,
+  "category": "dogs",
+  "image": "/images/products/dog-grooming-glove.svg",
+  "imageAlt": "Five-finger dog grooming glove with rubber tips for gentle deshedding and massage",
+  "shortDescription": "A grooming glove that feels like petting — your dog will not even know they are being brushed.",
+  "description": "Turn grooming from a struggle into a bonding session your dog actually looks forward to. The soft rubber tips on this five-finger glove gently lift loose fur, dirt, and dander while giving your pup a soothing massage. It works on wet or dry coats, so you can even use it during bath time for a deeper clean.",
+  "features": [
+    "255 soft rubber tips mimic a gentle petting sensation",
+    "Works on wet or dry coats — perfect for bath time too",
+    "Adjustable velcro wrist strap fits all hand sizes",
+    "Collected fur peels off in a single sheet for easy disposal",
+    "Stimulates blood circulation and promotes a healthier coat"
+  ],
+  "tags": ["grooming", "fur-care", "bath-time"],
+  "inStock": true,
+  "featured": false,
+  "weight": "95g"
+}

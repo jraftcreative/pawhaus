@@ -1,0 +1,90 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import { getCollection } from 'astro:content';
+
+const allProducts = await getCollection('products');
+const cats = allProducts.filter((p) => p.data.category === 'cats');
+const dogs = allProducts.filter((p) => p.data.category === 'dogs');
+---
+
+<Layout
+  title="Shop All Pet Accessories — PawHaus"
+  description="Browse our full collection of premium cat & dog accessories. Toys, grooming, beds, leashes & more. Free shipping over S$50 in Singapore."
+>
+  <Breadcrumb items={[{ label: 'Shop All' }]} />
+
+  <section class="container-max pb-16">
+    <div class="text-center mb-8">
+      <h1 class="font-display text-3xl md:text-4xl font-bold text-charcoal">Shop All Products</h1>
+      <p class="text-charcoal-light mt-2">Everything your furry friend needs, in one place</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="flex justify-center gap-2 mb-8" id="filter-tabs">
+      <button
+        class="filter-tab active px-5 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer bg-coral text-white"
+        data-filter="all"
+      >
+        All ({allProducts.length})
+      </button>
+      <button
+        class="filter-tab px-5 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer bg-white text-charcoal border border-gray-light hover:border-cat-purple hover:text-cat-purple"
+        data-filter="cats"
+      >
+        🐱 Cats ({cats.length})
+      </button>
+      <button
+        class="filter-tab px-5 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer bg-white text-charcoal border border-gray-light hover:border-dog-amber hover:text-dog-amber"
+        data-filter="dogs"
+      >
+        🐶 Dogs ({dogs.length})
+      </button>
+    </div>
+
+    <!-- Product grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6" id="product-grid">
+      {allProducts.map((product) => (
+        <div data-category={product.data.category}>
+          <ProductCard
+            slug={product.data.slug}
+            name={product.data.name}
+            price={product.data.price}
+            comparePrice={product.data.comparePrice}
+            image={product.data.image}
+            imageAlt={product.data.imageAlt}
+            shortDescription={product.data.shortDescription}
+            category={product.data.category}
+          />
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<script>
+  const tabs = document.querySelectorAll('.filter-tab');
+  const items = document.querySelectorAll('#product-grid > div');
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const filter = tab.getAttribute('data-filter');
+
+      tabs.forEach((t) => {
+        t.classList.remove('active', 'bg-coral', 'text-white');
+        t.classList.add('bg-white', 'text-charcoal', 'border', 'border-gray-light');
+      });
+      tab.classList.add('active', 'bg-coral', 'text-white');
+      tab.classList.remove('bg-white', 'text-charcoal', 'border', 'border-gray-light');
+
+      items.forEach((item) => {
+        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+          (item as HTMLElement).style.display = '';
+        } else {
+          (item as HTMLElement).style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

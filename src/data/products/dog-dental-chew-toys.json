@@ -1,0 +1,22 @@
+{
+  "name": "Dog Dental Chew Toys (3pcs)",
+  "slug": "dog-dental-chew-toys",
+  "price": 16,
+  "comparePrice": 24,
+  "category": "dogs",
+  "image": "/images/products/dog-dental-chew-toys.svg",
+  "imageAlt": "Set of three textured rubber dental chew toys for dogs in bright colours",
+  "shortDescription": "Clean teeth, fresh breath, and hours of chewing fun — all in one toy set.",
+  "description": "Dental care does not have to be a battle. These textured chew toys are designed to clean your dog's teeth and massage their gums as they play. The grooved surfaces scrub away plaque and tartar with every bite, while the durable rubber stands up to even the most aggressive chewers. A healthier mouth, the fun way.",
+  "features": [
+    "Three unique shapes target different areas of the mouth",
+    "Textured grooves scrub plaque and tartar during chewing",
+    "Non-toxic, BPA-free natural rubber is safe to chew daily",
+    "Bouncy design doubles as a fetch toy for active play",
+    "Suitable for small to medium dogs — tough enough for power chewers"
+  ],
+  "tags": ["dental", "toys", "health", "value-set"],
+  "inStock": true,
+  "featured": false,
+  "weight": "250g"
+}

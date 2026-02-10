@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-cream: #FFFBF7;
+  --color-cream-dark: #FFF5ED;
+  --color-coral: #E86C3A;
+  --color-coral-light: #F09A74;
+  --color-coral-dark: #D15A2A;
+  --color-charcoal: #2D3748;
+  --color-charcoal-light: #4A5568;
+  --color-gray-warm: #A0AEC0;
+  --color-gray-light: #E2E8F0;
+  --color-cat-purple: #8B5CF6;
+  --color-cat-purple-light: #EDE9FE;
+  --color-dog-amber: #F59E0B;
+  --color-dog-amber-light: #FEF3C7;
+  --color-success: #48BB78;
+  --color-white: #FFFFFF;
+
+  /* Fonts */
+  --font-display: 'Fredoka', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --container-max: 1280px;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Snipcart theme overrides */
+.snipcart-modal__container {
+  z-index: 99999 !important;
+}
+
+.snipcart-cart-header {
+  background-color: var(--color-coral) !important;
+}
+
+.snipcart-cart-header__title {
+  color: var(--color-white) !important;
+}
+
+.snipcart-btn--highlight,
+.snipcart-checkout-step__footer-col--highlight .snipcart-btn {
+  background-color: var(--color-coral) !important;
+  color: var(--color-white) !important;
+}
+
+.snipcart-btn--highlight:hover,
+.snipcart-checkout-step__footer-col--highlight .snipcart-btn:hover {
+  background-color: var(--color-coral-dark) !important;
+}
+
+.snipcart-cart-button--highlight {
+  background-color: var(--color-coral) !important;
+  color: var(--color-white) !important;
+}
+
+.snipcart-cart-button--highlight:hover {
+  background-color: var(--color-coral-dark) !important;
+}
+
+.snipcart-discount-box__button {
+  color: var(--color-coral) !important;
+}
+
+/* Utility classes */
+.container-max {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-max {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-max {
+    padding-inline: 2rem;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Dog Bandana Set (3pcs)",
+  "slug": "dog-bandana-set",
+  "price": 15,
+  "comparePrice": 22,
+  "category": "dogs",
+  "image": "/images/products/dog-bandana-set.svg",
+  "imageAlt": "Set of three colourful dog bandanas in plaid, floral, and solid patterns",
+  "shortDescription": "Three stylish bandanas to make your dog the best-dressed pup at the park.",
+  "description": "Dress up your furry companion for walkies, park outings, or the perfect Instagram photo. This set of three reversible bandanas features trendy patterns that suit any breed and any occasion. The snap-button closure makes them easy to put on and adjustable for a comfortable, secure fit.",
+  "features": [
+    "Three reversible designs — six looks in one set",
+    "Breathable cotton fabric stays comfortable in tropical weather",
+    "Adjustable snap-button closure fits necks from 25cm to 45cm",
+    "Machine-washable and colourfast — stays vibrant wash after wash",
+    "Lightweight material won't weigh down small breeds"
+  ],
+  "tags": ["accessories", "fashion", "value-set", "new-arrival"],
+  "inStock": true,
+  "featured": false,
+  "weight": "60g"
+}
