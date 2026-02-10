@@ -47,7 +47,7 @@ const related = allProducts
         <div class="bg-cream rounded-2xl overflow-hidden aspect-square">
           <img
             id="main-product-image"
-            src={image}
+            src={url(image)}
             alt={imageAlt}
             class="w-full h-full object-cover"
           />
@@ -66,9 +66,9 @@ const related = allProducts
                   'gallery-thumb w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden border-2 cursor-pointer transition-all',
                   i === 0 ? 'border-coral' : 'border-transparent hover:border-gray-warm',
                 ]}
-                data-src={img}
+                data-src={url(img)}
               >
-                <img src={img} alt={`${name} view ${i + 1}`} class="w-full h-full object-cover" loading="lazy" />
+                <img src={url(img)} alt={`${name} view ${i + 1}`} class="w-full h-full object-cover" loading="lazy" />
               </button>
             ))}
           </div>

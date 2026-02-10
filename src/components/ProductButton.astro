@@ -1,4 +1,6 @@
 ---
+import { url as baseUrl } from '../utils/base';
+
 interface Props {
   id: string;
   name: string;
@@ -23,7 +25,7 @@ const siteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://pawhaus.com';
   data-item-name={name}
   data-item-price={price}
   data-item-url={`${siteUrl}${url}`}
-  data-item-image={image}
+  data-item-image={baseUrl(image)}
   data-item-description={description}
   data-item-weight={weight}
   data-item-currency="sgd"
